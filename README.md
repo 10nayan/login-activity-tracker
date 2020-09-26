@@ -14,7 +14,7 @@ is fenerated in API, after signout end_time is updated with current time.
 - **/ftl/tests.py**: python app file  required for testing of this appliation.
 - **/ftl/signals.py**: python app file  required for sending signin and signout signals.
 - **/ftl/apps.py**: python app file  required for registering the ftl app to django ftl_assignment project of this appliation.
-- **/ftl_assignment/**: python main project folder in which movie app is created.
+- **/ftl_assignment/**: python main project folder in which ftl app is created.
 - **Procfile**: file required for deployment in heroku.
 - **requirements.txt**: list of Python packages installed (also required for Heroku)
 - **ftl/templates/**: folder with all HTML files
