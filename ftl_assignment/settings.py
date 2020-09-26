@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['fullthrottlenayan.herokuapp.com']
+ALLOWED_HOSTS = ['fullthrottlenayan.herokuapp.com','127.0.0.1','localhost']
 
 
 # Application definition
@@ -75,11 +75,11 @@ WSGI_APPLICATION = 'ftl_assignment.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-
 DATABASES = {}
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default']=db_from_env
+
 
 
 # Password validation

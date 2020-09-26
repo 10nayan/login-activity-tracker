@@ -38,11 +38,11 @@ def signin(request):
 
 #this function signout already logged in user,if no user is curently logged in it will throw warning message
 def signout(request):
-    if request.user.is_anonymous:
-        messages.warning(request,"You are already logged out")
+    if request.user.is_authenticated:
+        logout(request)
+        messages.success(request, "You have succesfully logged out")
         return redirect('/signin')
-    logout(request)
-    messages.success(request, "You have succesfully logged out")
+    messages.warning(request,"You are already logged out")
     return redirect('/signin')
 
 #this function returns json response of activity status of users 
